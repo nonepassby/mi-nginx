@@ -1,0 +1,31 @@
+# Name of the image and version
+name="nginx-1.17.6"
+
+# Build image to use for base of the image.  This image must
+# already exist in the ZFS hierarchy.
+# base-64-x.x.x or minimal-64-x.x.x
+base="minimal-64-lts-19.4.0"
+
+# Organization name (implanted in motd and product)
+organization="Joyent"
+
+# Brand name (implanted in motd and product)
+brand="Instance"
+
+# Description of the image
+description="Description for image nginx 1.17.6, base image minimal-64-lts-19.4.0"
+
+# Homepage specific to the image
+homepage="https://github.com/nonepassby/mi-nginx"
+
+# Metadata users to be created (not real users created)
+users=""
+
+# Role of image (database, loadbalancer, development, hadoop, other, os)
+role="development"
+
+# Minimum amount of ram needed
+minram=""
+
+# new image uuid
+manifest_uuid="ce3ce1ce-3f87-11ea-84fa-63b5f53cf2c0"
