@@ -1,0 +1,38 @@
+{
+    "brand": "joyent",
+    "image_uuid": "ce3ce1ce-3f87-11ea-84fa-63b5f53cf2c0",
+    "autoboot": true,
+    "alias": "nginx",
+    "hostname": "nginx",
+    "dns_domain": "nginx",
+    "resolvers": [
+      "8.8.8.8",
+      "8.8.4.4"
+    ],
+    "max_physical_memory": 2048,
+    "nics": [
+      {
+        "nic_tag": "admin",
+        "ip": "192.168.1.120",
+        "netmask": "255.255.255.0",
+        "gateway": "192.168.1.1",
+        "primary": true
+      }
+    ],
+    "filesystems": [
+      {
+        "type": "lofs",
+        "source": "/export/nginx/conf",
+        "target": "/opt/local/etc/nginx"
+      },
+      {
+        "type": "lofs",
+        "source": "/export/nginx/logs",
+        "target": "/var/log/nginx"
+      }
+    ],
+    "customer_metadata": {
+      "root_authorized_keys": "...",
+      "user-script": "/usr/sbin/mdata-get root_authorized_keys > ~root/.ssh/authorized_keys ; /usr/sbin/mdata-get root_authorized_keys > ~admin/.ssh/authorized_keys"
+    }
+  }
