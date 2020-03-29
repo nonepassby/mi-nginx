@@ -1,6 +1,10 @@
+nginx-minimal-1.17.6
+* change name to nginx-minimal
+* change motd
+
 nginx-1.17.6
 * update base image: minimal-64-lts-19.4.0
-* nginx-1.17.6.
+* nginx-1.17.6
 
 nginx-1.17.3
 * Base image is minimal-64-19.3.0 (2019Q3)

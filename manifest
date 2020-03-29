@@ -1,5 +1,5 @@
 # Name of the image and version
-name="nginx-1.17.6"
+name="nginx-minimal-1.17.6"
 
 # Build image to use for base of the image.  This image must
 # already exist in the ZFS hierarchy.
@@ -7,7 +7,7 @@ name="nginx-1.17.6"
 base="minimal-64-lts-19.4.0"
 
 # Organization name (implanted in motd and product)
-organization="Joyent"
+organization="Itime"
 
 # Brand name (implanted in motd and product)
 brand="Instance"
@@ -28,4 +28,4 @@ role="development"
 minram=""
 
 # new image uuid
-manifest_uuid="ce3ce1ce-3f87-11ea-84fa-63b5f53cf2c0"
+manifest_uuid="9b31676e-71c8-11ea-b299-e7477b029787"
