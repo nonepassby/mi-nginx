@@ -1,0 +1,35 @@
+{
+  "brand": "joyent",
+  "image_uuid": "9b31676e-71c8-11ea-b299-e7477b029787",
+  "autoboot": true,
+  "alias": "nginx",
+  "hostname": "nginx",
+  "dns_domain": "nginx",
+  "resolvers": [
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "max_physical_memory": 1024,
+  "nics": [
+    {
+      "nic_tag": "admin",
+      "ips": ["dhcp"],
+      "gateway": "192.168.1.1",
+      "primary": true
+    }
+  ],
+  "filesystems": [
+    {
+      "type": "lofs",
+      "source": "/zones/lofs/nginx/config",
+      "target": "/opt/local/etc/nginx"
+    },
+    {
+      "type": "lofs",
+      "source": "/zones/lofs/nginx/logs",
+      "target": "/var/log/nginx"
+    }
+  ],
+  "customer_metadata": {
+  }
+}
